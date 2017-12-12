@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  margin-top: 8vh;
+}
+
+.game-board{
+  margin: 0 auto;
+  width: 80vh;
+  height: 80vh; 
+}
+
+.tile{
+  display: inline-block;
+  width: 33.3333%;
+  height: 33.3333%;
+  background-color: #EAF2F8;
+  margin: -2px -2px;
+  border: 1px solid white;
+}
+/* vertically align inline block elements */
