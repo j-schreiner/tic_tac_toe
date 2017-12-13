@@ -1,14 +1,30 @@
 *{
   box-sizing: border-box;
 }
+
+h1{
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #154360;
+  letter-spacing: 2px;
+}
+
+.p1{
+  color: #2471A3;
+}
+
+.p2{
+  color: #7FB3D5;
+}
+
 .container{
-  margin-top: 8vh;
+  margin-top: 5vh;
 }
 
 .game-board{
   margin: 0 auto;
-  width: 80vh;
-  height: 80vh; 
+  width: 70vh;
+  height: 70vh; 
 }
 
 .tile{
@@ -19,4 +35,3 @@
   margin: -2px -2px;
   border: 1px solid white;
 }
-/* vertically align inline block elements */
