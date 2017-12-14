@@ -1,2 +1,2 @@
-# tic_tac_toe
-[tic_tac_toe](https://j-schreiner.github.io/tic_tac_toe/)
+# Tic Tac Toe
+[Play game here](https://j-schreiner.github.io/tic_tac_toe/)
