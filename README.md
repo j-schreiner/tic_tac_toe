@@ -5,6 +5,7 @@ Tic Tac Toe - with a twist.
 * Colours are used to differentiate between players instead of 'x' and 'o' markers.
 * Players take turns making moves on the 3x3 square game board.
 * Player one always begins.
+
 [Play Tic Tac Toe](https://j-schreiner.github.io/tic_tac_toe/)
 
 ### Challenges
