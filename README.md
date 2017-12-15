@@ -1,7 +1,7 @@
 # Tic Tac Toe
 ### Instructions
 
-Tic Tac Toe - with a twist. 
+Tic Tac Toe - with colours. 
 * Colours are used to differentiate between players instead of 'x' and 'o' markers.
 * Players take turns making moves on the 3x3 square game board.
 * Player one always begins.
