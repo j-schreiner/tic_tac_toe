@@ -1,12 +1,15 @@
 
 var squares = document.querySelectorAll(".tile")
+var p1Wins = document.querySelector('#p1-wins')
+var p2Wins = document.querySelector('#p2-wins')
+var pdraw = document.querySelector('#players-draw')
 
 var counter = 0
 var player = ""
 
 var originalColor = '#EAF2F8'
-var p1Color = '#2471A3'
-var p2Color = '#7FB3D5'
+var p1Color = '#225667'
+var p2Color = '#ABE3E1'
 var p1 = 'P1'
 var p2 = 'P2'
 var gameFinished = false
@@ -30,23 +33,10 @@ function fillBoardLog(event){
   } else{
     boardLog[Number(event.target.id[1])] = p2
   }
-  // console.log(boardLog)
 }
 
 var winner
 var winConditions = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
-
-// function checkWinOrDraw(event){ 
-//   for(var i = 0; i < winConditions.length; i++){
-//     var winCombo = winConditions[i]
-//     for(var i = 0; i < winCombo.length; i++){
-//       if(winCombo[i] === player){
-//         endGame(player)
-//       }
-//     }
-//   }
-// }
-
 
 function checkWin(event){
   for(var i = 0; i < winConditions.length; i++){
@@ -61,26 +51,18 @@ function checkWin(event){
   }
 }
 
-// function checkWinOrDraw(event){
-//   var winCombo = winConditions[0]
-//   win = winCombo.every(function(index) {
-//     return boardLog[index] === player
-//   })
-//   if (win) {
-//     endGame(player)
-//   }
-// }
-
-function endGame(winner) {
-  console.log(winner + " wins!")
-  // alert(winner + " wins!")
+function endGame(player) {
+  if(player === "P1"){
+    p1Wins.textContent = "WINS!"
+  } else if(player === "P2"){
+    p2Wins.textContent = "WINS!"
+  }
   gameFinished = true
 }
 
 function checkDraw(event){
     if(!boardLog.includes(undefined)){
-      console.log("Players Draw!")
-      // alert("Players Draw!")
+      pdraw.textContent = "PLAYERS DRAW"
     gameFinished = true
     }
 }

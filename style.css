@@ -3,28 +3,53 @@
 }
 
 h1{
+  padding-top: 3vh;
   text-align: center;
+  font-size: 40px;
   font-family: 'Roboto Condensed', sans-serif;
-  color: #154360;
+  color: #225667;
   letter-spacing: 2px;
+  margin: 0;
 }
 
 .p1{
-  /*color: red;*/
-  color: #2471A3;
+  color: #225667;
+  padding: 0 50px;
+}
+
+#p1-wins, #p2-wins, #players-draw{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+
+#p1-wins{
+  color: #225667;
+}
+
+#p2-wins{
+  color: #ABE3E1;
+}
+
+#players-draw{
+  color: #225667;
 }
 
 .p2{
-  /*color: blue;*/
-  color: #7FB3D5;
+  color: #ABE3E1;
+  padding: 0 50px;
 }
 
 .container{
   margin-top: 5vh;
+
+  display: flex;
+  justify-content:  center;
+  align-items: center;
 }
 
 .game-board{
-  margin: 0 auto;
   width: 70vh;
   height: 70vh; 
 }
@@ -33,7 +58,12 @@ h1{
   display: inline-block;
   width: 33.3333%;
   height: 33.3333%;
-  background-color: #EAF2F8;
+  background-color: #F2FCFC;
   margin: -2px -2px;
   border: 1px solid white;
+}
+
+span{
+  display: block;
+  height: 20px;
 }

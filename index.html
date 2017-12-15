@@ -7,8 +7,12 @@
   <title>TIC TAC TOE</title>
 </head>
 <body>
+  <h1>TIC TAC TOE</h1>
   <main class="container">
-      <h1>TIC TAC TOE</h1>
+    <div class="player1">
+      <h1 class="p1">P1</h1>
+      <span id="p1-wins"></span>
+    </div>  
     <div class="game-board">
       <div class="tile" id="s0"></div>
       <div class="tile" id="s1"></div>
@@ -20,8 +24,12 @@
       <div class="tile" id="s7"></div>
       <div class="tile" id="s8"></div>
     </div>
-      <h1><span class="p1">P1</span><span class="p2">P2</span></h1>
+    <div class="player2">
+      <h1 class="p2">P2</h1>
+      <span id="p2-wins"></span>
+    </div>
   </main>
+  <h1 id="players-draw"></h1>
   <script src="app.js"></script>
 </body>
 </html>
